@@ -1,0 +1,151 @@
+:root{
+  --vinho:#8e1457; --vinho2:#6e0d42; --rosa:#e0569a; --rosa2:#f7d6e6; --rosa3:#fdf0f6;
+  --papel:#ffffff; --tinta:#2e1a26; --suave:#7a6170; --linha:#efe2ea;
+  --wa:#25d366; --wa2:#1da851; --r:10px;
+  --sh:0 6px 22px rgba(110,13,66,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
+body{font-family:Mulish,system-ui,sans-serif;color:var(--tinta);background:var(--papel);line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+h1,h2,h3{line-height:1.15}
+.eyebrow{color:var(--rosa);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:.4rem}
+.lead{color:var(--suave);font-size:1.05rem;margin-bottom:1rem;max-width:60ch}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem 1.3rem;border-radius:4px;border:0;font:800 .92rem Mulish,sans-serif;text-transform:uppercase;letter-spacing:.03em;text-decoration:none;cursor:pointer;transition:.2s}
+.btn svg{width:20px;height:20px}
+.btn--wa{background:var(--wa);color:#fff}.btn--wa:hover{background:var(--wa2)}
+.btn--vinho{background:var(--vinho);color:#fff}.btn--vinho:hover{background:var(--vinho2)}
+.btn--full{width:100%}
+
+/* topo */
+.aviso{background:var(--vinho2);color:#fbe3ef;text-align:center;font-size:.82rem;padding:.4rem 16px}
+.aviso b{color:#fff}
+.topo{position:sticky;top:0;z-index:30;background:var(--vinho);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.topo__in{display:flex;align-items:center;gap:1.4rem;height:70px}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;flex-shrink:0}
+.logo img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.5)}
+.logo span{font:italic 600 1.6rem/1 "Playfair Display",serif;display:flex;flex-direction:column}
+.logo small{font:700 .58rem Mulish,sans-serif;letter-spacing:.32em;text-transform:uppercase;opacity:.85;margin-top:3px}
+.busca{flex:1;display:flex;align-items:center;background:#fff;border-radius:4px;padding:0 .8rem;max-width:620px}
+.busca input{flex:1;border:0;outline:0;padding:.75rem .2rem;font:600 .95rem Mulish,sans-serif;color:var(--tinta);background:none;min-width:0}
+.busca svg{width:20px;height:20px;color:var(--suave)}
+.sacola-top{position:relative;margin-left:auto;background:none;border:0;color:#fff;cursor:pointer;padding:6px}
+.sacola-top svg{width:28px;height:28px}
+.sacola-top i{position:absolute;top:0;right:-4px;background:#fff;color:var(--vinho);font:800 .7rem Mulish;border-radius:999px;min-width:18px;height:18px;display:grid;place-items:center;font-style:normal}
+.cats{border-top:1px solid rgba(255,255,255,.18)}
+.cats__in{display:flex;justify-content:center;gap:.4rem;overflow-x:auto;scrollbar-width:none}
+.cats button{background:none;border:0;color:#fff;font:800 .85rem Mulish;text-transform:uppercase;letter-spacing:.04em;padding:.85rem 1.1rem;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.cats button:hover,.cats button.on{border-bottom-color:#fff}
+
+/* banner */
+.banner{padding:20px 0 0}
+.banner__in{background:linear-gradient(120deg,var(--rosa2),var(--rosa3) 60%,#fff);border-radius:var(--r);display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:2rem;padding:2.6rem 2.6rem;overflow:hidden}
+.banner h1{font:900 clamp(2rem,4.6vw,3.4rem)/1.05 Mulish,sans-serif;color:var(--vinho2);text-transform:uppercase;margin-bottom:.9rem}
+.banner h1 em{font:italic 600 1em "Playfair Display",serif;text-transform:none;color:var(--rosa)}
+.banner__txt>p:not(.eyebrow){color:var(--suave);font-size:1.07rem;max-width:46ch;margin-bottom:1.4rem}
+.banner__btns{display:flex;gap:.7rem;flex-wrap:wrap}
+.banner__fotos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:380px}
+.banner__fotos img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh)}
+.banner__fotos img:first-child{grid-row:span 2}
+
+/* benefícios */
+.beneficios{padding:26px 0 6px}
+.beneficios__in{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center}
+.beneficios__in div{display:flex;flex-direction:column;align-items:center;gap:.15rem;padding:.6rem}
+.beneficios svg{width:30px;height:30px;color:var(--vinho);margin-bottom:.3rem}
+.beneficios b{font-weight:800}
+.beneficios span{color:var(--suave);font-size:.88rem}
+
+/* seções */
+.sec{padding:52px 0}
+.sec--rosa{background:var(--rosa3)}
+.sec__head{text-align:center;margin-bottom:1.8rem}
+.sec__head h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:900;color:var(--vinho)}
+.sec__head p{color:var(--suave)}
+
+/* vitrine */
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{position:relative;background:#fff;border:1px solid var(--linha);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;text-align:center;transition:.2s}
+.card:hover{box-shadow:var(--sh);transform:translateY(-2px)}
+.card__img{aspect-ratio:1;border-radius:6px;overflow:hidden;background:var(--rosa3);margin-bottom:.8rem}
+.card__img img{width:100%;height:100%;object-fit:cover}
+.card__marca{color:var(--rosa);font-weight:800;text-transform:uppercase;font-size:.72rem;letter-spacing:.06em}
+.card h3{font-size:.95rem;font-weight:700;margin:.25rem 0 .35rem}
+.card__desc{color:var(--suave);font-size:.82rem;flex:1;margin-bottom:.6rem}
+.card__preco{color:var(--vinho);font-weight:900;margin-bottom:.7rem}
+.tag{position:absolute;top:22px;left:22px;z-index:1;background:var(--vinho);color:#fff;font:800 .7rem Mulish;text-transform:uppercase;padding:.25rem .55rem;border-radius:3px}
+.qtd{display:flex;align-items:center;justify-content:center;gap:1rem;border:2px solid var(--vinho);border-radius:4px;padding:.25rem}
+.qtd button{width:34px;height:34px;border:0;border-radius:4px;background:var(--vinho);color:#fff;font-size:1.2rem;font-weight:800;cursor:pointer}
+.qtd b{min-width:1.5rem;color:var(--vinho)}
+.vazio{text-align:center;margin-top:1.4rem;color:var(--suave)}
+.vazio a{color:var(--vinho);font-weight:800}
+
+/* marcas */
+.marcas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.marcas button{background:#fff;border:1px solid var(--linha);border-radius:var(--r);padding:1.1rem 1.6rem;min-width:150px;font:900 1rem Mulish;color:var(--vinho2);cursor:pointer;transition:.2s}
+.marcas button:hover{border-color:var(--vinho);box-shadow:var(--sh)}
+
+/* loja */
+.split{display:grid;grid-template-columns:1fr 1.2fr;gap:2.5rem;align-items:center}
+.split h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:900;color:var(--vinho);margin-bottom:.8rem}
+.fachada{width:100%;max-height:440px;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh)}
+.contato{list-style:none;display:grid;gap:.9rem;margin:1.2rem 0 1.5rem}
+.contato li{display:flex;gap:.8rem;align-items:flex-start}
+.contato svg{width:22px;height:22px;flex-shrink:0;color:var(--vinho);margin-top:2px}
+.contato a{text-decoration:none;font-weight:700}
+.h{display:flex;gap:1rem;justify-content:space-between;min-width:230px}
+.mapa{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:2.2rem}
+
+/* rodapé */
+.rodape{background:var(--vinho2);color:#f3d2e3;padding:2rem 0 5rem;text-align:center}
+.rodape__in{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.rodape a{color:#fff;font-weight:700}
+
+/* sacola */
+.sacola{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:40;display:flex;align-items:center;gap:.7rem;background:var(--vinho);color:#fff;border:0;border-radius:999px;padding:.8rem 1.4rem;font:800 .95rem Mulish;box-shadow:0 10px 30px rgba(0,0,0,.25);cursor:pointer}
+.sacola svg{width:22px;height:22px}
+.sacola i{font-style:normal;background:#fff;color:var(--vinho);border-radius:999px;padding:0 .55rem;font-size:.85rem}
+.painel{position:fixed;inset:0;z-index:60;background:rgba(30,10,20,.5);display:flex;justify-content:flex-end}
+.painel[hidden]{display:none}
+.painel__box{position:relative;background:#fff;width:min(420px,100%);height:100%;overflow:auto;padding:1.6rem 1.4rem;display:flex;flex-direction:column;gap:1rem}
+.painel__box h3{color:var(--vinho);font-size:1.4rem;font-weight:900}
+.painel__x{position:absolute;right:14px;top:8px;border:0;background:none;font-size:2rem;cursor:pointer;color:var(--vinho)}
+.lista{list-style:none;display:grid;gap:.6rem}
+.lista li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--linha);padding-bottom:.6rem}
+.lista small{display:block;color:var(--suave)}
+.total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:900;color:var(--vinho)}
+.total[hidden]{display:none}
+.seg{display:flex;background:var(--rosa3);border-radius:999px;padding:4px}
+.seg button{flex:1;border:0;background:transparent;padding:.55rem;border-radius:999px;font:800 .9rem Mulish;color:var(--vinho);cursor:pointer}
+.seg button.on{background:var(--vinho);color:#fff}
+.form{display:grid;gap:.8rem}
+.form label{display:grid;gap:.3rem;font-weight:700;font-size:.9rem}
+.form label[hidden]{display:none}
+.form input{border:1px solid var(--linha);border-radius:6px;padding:.7rem;font:600 1rem Mulish}
+.form small{color:var(--suave);text-align:center}
+.fab{position:fixed;right:18px;bottom:18px;z-index:39;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.fab svg{width:30px;height:30px}
+
+@media (max-width:900px){
+  .grade{grid-template-columns:repeat(3,1fr)}
+  .banner__in{grid-template-columns:1fr;padding:1.8rem 1.4rem}
+  .banner__fotos{height:300px}
+  .split{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .topo__in{flex-wrap:wrap;height:auto;padding:.6rem 16px;gap:.6rem}
+  .busca{order:3;flex-basis:100%;max-width:none}
+  .busca input{padding:.6rem .2rem}
+  .cats__in{justify-content:flex-start}
+  .grade{grid-template-columns:repeat(2,1fr);gap:10px}
+  .card{padding:10px}
+  .card__desc{display:none}
+  .banner__fotos{height:240px}
+  .beneficios__in{grid-template-columns:1fr;gap:.2rem}
+  .h{min-width:0}
+}

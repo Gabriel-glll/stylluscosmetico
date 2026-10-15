@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Styllu's Cosméticos | Loja de cosméticos no Bom Retiro, Sumaré-SP</title>
+<meta name="description" content="Styllu's Cosméticos: cabelos, corpo, lábios e unhas com as marcas que você ama. Ao lado do Savegnago Bom Retiro, em Sumaré-SP. Monte sua lista e peça pelo WhatsApp.">
+<meta property="og:title" content="Styllu's Cosméticos · Sumaré/SP">
+<meta property="og:description" content="Cosméticos ao lado do Savegnago Bom Retiro. Monte sua lista no site e finalize pelo WhatsApp.">
+<meta property="og:image" content="img/fachada.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aviso">Retire na loja ao lado do <b>Savegnago Bom Retiro</b> &nbsp;|&nbsp; Peça pelo <b>WhatsApp</b></div>
+
+<header class="topo">
+  <div class="wrap topo__in">
+    <a href="#" class="logo"><img src="img/logo.jpg" alt="Styllu's Cosméticos"><span>Styllu's<small>cosméticos</small></span></a>
+    <label class="busca"><input id="busca" type="search" placeholder="Olá, o que você procura?"><svg viewBox="0 0 24 24"><use href="#i-lupa"/></svg></label>
+    <button class="sacola-top" id="sacolaTop" aria-label="Ver minha lista"><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><i id="qtdTop">0</i></button>
+  </div>
+  <nav class="cats" id="cats"></nav>
+</header>
+
+<section class="banner">
+  <div class="wrap banner__in">
+    <div class="banner__txt">
+      <p class="eyebrow">Bom Retiro · Sumaré-SP</p>
+      <h1>Beleza <em>pertinho</em> de você</h1>
+      <p>Tratamentos para cabelo, hidratantes, cuidados com lábios e unhas — das marcas que você já ama. Escolha aqui e finalize pelo WhatsApp.</p>
+      <div class="banner__btns">
+        <a href="#vitrine" class="btn btn--vinho">Ver produtos</a>
+        <a class="btn btn--wa" data-wa="Olá! Vim pelo site da Styllu's e gostaria de fazer um pedido." href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg> Pedir no WhatsApp</a>
+      </div>
+    </div>
+    <div class="banner__fotos">
+      <img src="img/morte-subita.jpg" alt="Linha Morte Súbita na loja">
+      <img src="img/rosa-mosqueta.jpg" alt="Kit Rosa Mosqueta Eico">
+      <img src="img/mandioca.jpg" alt="Kit Tratamento Mandioca Eico">
+    </div>
+  </div>
+</section>
+
+<section class="beneficios">
+  <div class="wrap beneficios__in">
+    <div><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><b>Peça pelo WhatsApp</b><span>Monte sua lista e envie com 1 clique</span></div>
+    <div><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg><b>Retire na loja</b><span>Ao lado do Savegnago Bom Retiro</span></div>
+    <div><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><b>Marcas que você ama</b><span>Lola, Eico, Amend, Salon Line e mais</span></div>
+  </div>
+</section>
+
+<section class="sec" id="vitrine">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 id="vitTitulo">Novidades</h2>
+      <p>Confira o que chegou na nossa loja!</p>
+    </div>
+    <div class="grade" id="grade"></div>
+    <p class="vazio" id="vazio" hidden>Não achou? <a data-wa="Olá! Vocês têm este produto?" href="#">Pergunte pelo WhatsApp</a> — a loja tem muito mais do que aparece aqui.</p>
+  </div>
+</section>
+
+<section class="sec sec--rosa" id="marcas">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Principais marcas</h2>
+      <p>Navegue pelas marcas</p>
+    </div>
+    <div class="marcas" id="marcas-lista"></div>
+  </div>
+</section>
+
+<section class="sec" id="loja">
+  <div class="wrap split">
+    <img class="fachada" src="img/fachada.jpg" alt="Fachada da Styllu's Cosméticos">
+    <div>
+      <p class="eyebrow">Nossa loja</p>
+      <h2>Venha conhecer a Styllu's</h2>
+      <p class="lead">Loja de cosméticos no Bom Retiro, em Sumaré, bem ao lado do Savegnago. Prateleiras cheias de tratamentos para cabelo, hidratantes, maquiagem e cuidados com as unhas — e atendimento de quem entende do assunto.</p>
+      <ul class="contato">
+        <li><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg><span id="cEnd"></span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><a id="cTel"></a></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg><div id="cHora"></div></li>
+      </ul>
+      <a class="btn btn--wa" data-wa="Olá! Vim pelo site da Styllu's." href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg> Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <div class="wrap"><iframe class="mapa" id="mapa" loading="lazy" title="Mapa da loja"></iframe></div>
+</section>
+
+<footer class="rodape">
+  <div class="wrap rodape__in">
+    <div class="logo logo--claro"><img src="img/logo.jpg" alt=""><span>Styllu's<small>cosméticos</small></span></div>
+    <p>Rua Rozendo Alves de Souza, 832 · Bom Retiro · Sumaré-SP</p>
+    <p><a id="fIg" target="_blank" rel="noopener">@stylluscosmetico</a></p>
+  </div>
+</footer>
+
+<!-- Lista de pedido -->
+<button class="sacola" id="sacolaBtn" hidden><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><span>Ver minha lista</span><i id="sacolaQtd"></i></button>
+<div class="painel" id="painel" hidden>
+  <div class="painel__box">
+    <button class="painel__x" id="fechar" aria-label="Fechar">×</button>
+    <h3>Minha lista</h3>
+    <ul class="lista" id="lista"></ul>
+    <div class="total" id="totalBox" hidden><span>Total</span><b id="total"></b></div>
+    <div class="seg" id="segPed">
+      <button type="button" class="on" data-v="Retirada na loja">Retirar na loja</button>
+      <button type="button" data-v="Entrega">Entrega</button>
+    </div>
+    <form id="formPed" class="form">
+      <label>Seu nome<input name="nome" required></label>
+      <label class="endPed" hidden>Endereço de entrega<input name="end" placeholder="Rua, número e bairro"></label>
+      <label>Observações<input name="obs" placeholder="Cor, tamanho, fragrância..."></label>
+      <button class="btn btn--wa btn--full" type="submit"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg> Enviar pelo WhatsApp</button>
+      <small>Preço, estoque e entrega são confirmados pela loja no WhatsApp.</small>
+    </form>
+  </div>
+</div>
+
+<a class="fab" data-wa="Olá! Vim pelo site da Styllu's." href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-lupa" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 8h14l-1 13H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+</svg>
+
+<script src="data/config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
